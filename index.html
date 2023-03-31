@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gradient Editor</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/c7576d4bec.js" crossorigin="anonymous"></script>
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="text-container">
+          <h2 class="text" id="text">New Paint</h2>
+        </div>
+
+        <div class="gradient-box" id="gradient-box"></div>
+        <div class="stops-container" id="stops"></div>
+        <div class="add-stop-btn-container">
+          <button class="add-stop-btn" id="add-stop-btn">Add Stop</button>
+        </div>
+        <div class="angle-container">
+          <label for="angle-slider">Angle:</label>
+          <input type="number" id="angle-input" min="0" max="360" value="90" step="1" class="angle-input">
+        </div>
+        <input type="text" id="text-input" value="New Paint">
+        <div class="form-group">
+          <input type="checkbox" id="repeat-checkbox">
+          <label for="repeat-checkbox">Repeat gradient</label>
+        </div>
+        <div class="gradient-type-container">
+          <label for="linear-gradient-radio">Linear Gradient</label>
+          <input type="radio" id="linear-gradient-radio" name="gradient-type" checked>
+
+          <label for="radial-gradient-radio">Radial Gradient</label>
+          <input type="radio" id="radial-gradient-radio" name="gradient-type">
+          
+        </div>
+        <div class="gradient-info-container">
+          <textarea id="gradient-info" class="dark-input" rows="6" placeholder="Gradient Info" readonly></textarea>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+  
+</html>

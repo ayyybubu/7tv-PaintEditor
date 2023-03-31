@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: #111;
+  color: #eee;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 45rem;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.gradient-box {
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #222;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.stops {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.stop {
+  flex-grow: 1;
+  max-width: 200px;
+  background-color: #333;
+  border-radius: 4px;
+  padding: 10px;
+  position: relative;
+}
+
+.stops-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+  margin-top: 20px;
+  justify-items: center;
+}
+
+.forsen-text {
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.color-picker {
+  display: flex;
+align-items: flex-start;
+    justify-content: space-between;
+}
+.color-picker-box {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.color-picker input[type="text"] {
+  width: 4rem;
+  background-color: #444;
+  color: #eee;
+  border: none;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.color-picker input[type="color"] {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #eee;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.color-picker input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.color-picker input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+}
+
+.delete-btn {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: rgb(66, 66, 66);
+  color: #fff;
+ border-radius: 50%;
+  cursor: pointer;
+}
+.delete-btn .fas {
+  pointer-events: none;
+}
+
+.stop .delete-btn::before {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: rgb(66, 66, 66);
+  color: #fff;
+ border-radius: 50%;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #ff3333;
+}
+.add-stop-btn {
+  background-color: #1e1e1e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.add-stop-btn:hover {
+  background-color: #282828;
+}
+.angle-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.angle-container label {
+  font-weight: bold;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.angle-input {
+  width: 4rem;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3d3d3d;
+  color: #fff;
+  font-size: 16px;
+}
+
+.angle-input:focus {
+  outline: none;
+  box-shadow: 0px 0px 2px 2px #3498db;
+}
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 72px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+input[type="text"] {
+
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgb(66, 66, 66);
+  color: #fff;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.dark-input {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgb(66, 66, 66);
+  color: #fff;
+  width: 100%;
+  margin-bottom: 20px;
+  resize: none;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 8px;
+  background-color: #333333;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #666666;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #999999;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #333333;
+}

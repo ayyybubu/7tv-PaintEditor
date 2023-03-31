@@ -34,12 +34,16 @@
           <label for="repeat-checkbox">Repeat gradient</label>
         </div>
         <div class="gradient-type-container">
+          <div class="gradient-linear-container">
+            <input type="radio" id="linear-gradient-radio" name="gradient-type" checked>
           <label for="linear-gradient-radio">Linear Gradient</label>
-          <input type="radio" id="linear-gradient-radio" name="gradient-type" checked>
 
-          <label for="radial-gradient-radio">Radial Gradient</label>
+        </div>
+        <div>
           <input type="radio" id="radial-gradient-radio" name="gradient-type">
-          
+          <label for="radial-gradient-radio">Radial Gradient</label>
+
+        </div>
         </div>
         <div class="gradient-info-container">
           <textarea id="gradient-info" class="dark-input" rows="6" placeholder="Gradient Info" readonly></textarea>

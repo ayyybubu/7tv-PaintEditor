@@ -52,7 +52,14 @@ body {
   padding: 10px;
   position: relative;
 }
-
+.gradient-type-container{
+  display: flex;
+  flex-direction: column;
+}
+.gradient-linear-container{
+padding-bottom: 0.5rem;
+  
+}
 .stops-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -193,14 +200,11 @@ input[type="text"] {
   margin-bottom: 10px;
 }
 
-label {
-  margin-right: 10px;
-}
 
 input[type="checkbox"] {
   width: 20px;
   height: 20px;
-  margin-right: 5px;
+  margin-right: 0.8rem;
 }
 
 .dark-input {
@@ -233,4 +237,45 @@ input[type="checkbox"] {
 
 ::-webkit-scrollbar-track {
   background-color: #333333;
+}
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  border: 2px solid #bbb;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 20px;
+margin-right: 0.5rem;
+  position: relative;
+  top: 5px;
+  width: 20px;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+}
+
+input[type="radio"]:focus {
+  outline: none;
+}
+
+input[type="radio"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+input[type="radio"]:disabled:before {
+  background-color: #aaa;
 }

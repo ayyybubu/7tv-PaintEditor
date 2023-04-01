@@ -27,7 +27,7 @@ function renderStops() {
       <div class="color-picker">
       <div class="color-picker-box">
         <input type="color" value="${stop.color}" data-index="${index}">
-        <input type="text" value="${stop.color}" data-index="${index}">
+        <input type="text" value="${stop.color}" data-index="${index}"readonly>
         </div>
         <button class="delete-btn" data-index="${index}"><i class="fas fa-times"></i></button>
       </div>
